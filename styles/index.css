@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #202621
+}
+
+h1,
+p {
+    margin: 0;
+}
+
+.hero-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    background-image: url("../images/opening-image.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 644px;
+}
+
+.hero-text {
+    max-width: 1500px;
+    flex-basis: 100%;
+    font-family: "amandine", sans-serif;
+    font-weight: 700;
+    font-size: 200px;
+    font-style: normal;
+    color: #F5F5F5;
+}
+
+.hero-text2 {
+    max-width: 1100px;
+    font-size: 48px;
+    flex-basis: 100%;
+    font-family: "Kulim Park", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #F5F5F5;
+}
+
+.flex-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.pad-1 {
+    min-height: 100px;
+    background-color: #202621
+}
+
+.nav-links a {
+    padding-right: 80px;
+    font-family: "Kulim Park", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 32px;
+    color: #F5F5F5;
+    text-decoration: none;
+}
+
+.about-card {
+    padding: 50px;
+    display: flex;
+    border: 2px solid;
+    min-height: 677px;
+    width: 820px;
+    background-color: #FF8906;
+}
+
+p.card-desc {
+    font-size: 35px;
+    font-family: "Kulim Park", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #202621;
+}
+
+h1.card-title {
+    padding-bottom: 50px;
+    text-align: center;
+    margin: 0;
+    font-size: 90px;
+    font-family: "amandine", sans-serif;
+    font-weight: 500;
+    color: #F5F5F5;
+}
+
+.nav-links {
+    text-align: right;
+    text-decoration: none;
+}
+
+h2.o-text {
+    padding-top: 80px;
+    text-align: center;
+    margin: 10px;
+    font-size: 64px;
+    font-family: "amandine", sans-serif;
+    font-weight: 500;
+    color: #F5F5F5;
+}
+
+p.h-text {
+    padding-bottom: 100px;
+    text-align: center;
+    margin: 40px;
+    font-size: 64px;
+    font-family: "Kulim Park", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: #F5F5F5;
+}
+
+.food-container {
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.food-image-container {
+    justify-content: center;
+    flex-basis: 50%;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.menu-text {
+    text-align: center;
+    padding-top: 20px;
+    font-family: "Kulim Park", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 40px;
+    color: #F5F5F5;
+}
+
+.button {
+    padding: 30px;
+    font-size: 40px;
+    font-family: "Kulim Park", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    background-color: #3BAD7F;
+    color: #202621;
+}
+
+.cta {
+    text-align: center;
+}
+
+.sc-card {
+    padding-top: 60px;
+    display: flex;
+    border: 0px solid;
+    align-content: flex-start;
+}
+
+h3.sc-header {
+    text-align: right;
+    padding-right: 50px;
+    margin: 0;
+    font-size: 96px;
+    font-family: "amandine", sans-serif;
+    font-weight: 500;
+    color: #F5F5F5;
+}
+
+p.sc-desc {
+    padding: 50px;
+    font-size: 48px;
+    font-family: "Kulim Park", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: #F5F5F5;
+}
+
+.gallery-header {
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 128px;
+    font-family: "amandine", sans-serif;
+    font-weight: 500;
+    color: #F5F5F5;
+}
+
+.gallery-text {
+    padding: 20px;
+    text-align: center;
+    font-size: 60px;
+    font-family: "Kulim Park", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: #F5F5F5;
+}
+
+.pad-2 {
+    min-height: 200px;
+    background-color: #202621
+}
+
+.dividers {
+    min-height: 83px;
+    background-color: #FF8906;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-section {
+    font-family: "Kulim Park", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 40px;
+    color: #F5F5F5;
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+.logo-container {
+    margin: auto;
+}
