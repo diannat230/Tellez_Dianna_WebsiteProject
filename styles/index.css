@@ -26,6 +26,8 @@ p {
     background-size: cover;
     background-position: center;
     min-height: 644px;
+    width: 100%;
+
 }
 
 .hero-text {
@@ -46,6 +48,15 @@ p {
     font-weight: 300;
     font-style: normal;
     color: #F5F5F5;
+}
+
+.michelin-star {
+    display: flex;
+    justify-content: center;
+}
+
+.michelin-star:hover {
+    transform: scale(1.2);
 }
 
 .flex-container {
@@ -72,14 +83,17 @@ p {
 .about-card {
     padding: 50px;
     display: flex;
+    flex-wrap: wrap;
     border: 2px solid;
-    min-height: 677px;
-    width: 820px;
+    min-height: 533px;
+    width: 100%;
     background-color: #FF8906;
 }
 
+
 p.card-desc {
-    font-size: 35px;
+    margin: 0;
+    font-size: 25px;
     font-family: "Kulim Park", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -87,10 +101,10 @@ p.card-desc {
 }
 
 h1.card-title {
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     text-align: center;
     margin: 0;
-    font-size: 90px;
+    font-size: 60px;
     font-family: "amandine", sans-serif;
     font-weight: 500;
     color: #F5F5F5;
@@ -152,30 +166,33 @@ p.h-text {
     padding: 30px;
     font-size: 40px;
     font-family: "Kulim Park", sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     font-style: normal;
     background-color: #3BAD7F;
     color: #202621;
 }
 
 .cta {
+    padding-bottom: 40px;
     text-align: center;
 }
 
 .sc-card {
-    padding-top: 60px;
-    display: flex;
+    margin: 0;
+    padding: 50px;
+    flex-wrap: wrap;
     border: 0px solid;
-    align-content: flex-start;
+    width: 100%;
 }
 
 .col-6 {
+    flex-wrap: wrap;
     flex-basis: 50%;
+
 }
 
 h3.sc-header {
     text-align: right;
-    padding-right: 50px;
     margin: 0;
     font-size: 96px;
     font-family: "amandine", sans-serif;
@@ -184,7 +201,8 @@ h3.sc-header {
 }
 
 p.sc-desc {
-    padding: 50px;
+    text-align: right;
+    padding: 20px;
     font-size: 48px;
     font-family: "Kulim Park", sans-serif;
     font-weight: 200;
@@ -222,11 +240,14 @@ p.sc-desc {
 }
 
 .footer-container {
+    margin: 0 auto;
+    padding: 90px;
     display: flex;
     justify-content: center;
 }
 
-.footer-section {
+.footer-section,
+a {
     font-family: "Kulim Park", sans-serif;
     font-weight: 200;
     font-style: normal;
@@ -235,9 +256,182 @@ p.sc-desc {
     flex: 1;
     margin: 10px;
     text-align: center;
+    text-decoration: none;
 }
 
 .logo-container {
     margin: auto;
+}
 
+
+.container {
+    max-width: 1728px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+    .nav-links a {
+        font-size: 25px;
+    }
+
+    .hero-text {
+        font-size: 80px;
+        text-align: center;
+    }
+
+    .hero-text2 {
+        font-size: 20px;
+    }
+
+    .menu-text,
+    p.card-desc,
+    p.sc-desc {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .about-card,
+    .sc-card {
+        flex-wrap: wrap;
+    }
+
+    h1.card-title,
+    h3.sc-header {
+        text-align: center;
+        font-size: 45px;
+    }
+
+    h2.o-text,
+    p.h-text {
+        font-size: 32px;
+    }
+
+    .button {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    .sc-card {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col-6 {
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .gallery-header {
+        font-size: 70px;
+    }
+
+    .gallery-text {
+        font-size: 40px;
+    }
+
+    .footer-container {
+        flex-wrap: wrap;
+    }
+
+    .footer-section,
+    a {
+        font-size: 20px;
+        display: block;
+    }
+
+    .pad-2 {
+        min-height: 50px;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width:768px) {
+    .nav-links a {
+        font-size: 25px;
+    }
+
+    .hero-text {
+        font-size: 100px;
+        text-align: center;
+    }
+
+    .hero-text2 {
+        font-size: 40px;
+    }
+
+    .menu-text,
+    p.card-desc,
+    p.sc-desc {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .about-card,
+    .sc-card {
+        flex-wrap: wrap;
+    }
+
+    h1.card-title,
+    h3.sc-header {
+        text-align: center;
+        font-size: 45px;
+    }
+
+    h2.o-text,
+    p.h-text {
+        font-size: 32px;
+    }
+
+    .button {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    .sc-card {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col-6 {
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .gallery-header {
+        font-size: 70px;
+    }
+
+    .gallery-text {
+        font-size: 40px;
+    }
+
+    .footer-container {
+        flex-wrap: wrap;
+    }
+
+    .footer-section,
+    a {
+        font-size: 20px;
+        display: block;
+    }
+
+    .pad-2 {
+        min-height: 50px;
+    }
 }

@@ -7,11 +7,21 @@
     <title>Kasama Web Project</title>
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="https://use.typekit.net/tdj2jsc.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kulim+Park:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script defer src="js/index.js"></script>
 </head>
 
 <body>
+
+
     <!-- Hero Image -->
-    <section>
+    <section class="container">
         <div class="hero-image">
             <div>
                 <div class="nav-links">
@@ -28,24 +38,32 @@
         </div>
     </section>
 
-    <!-- Empty Container -->
-    <section class="pad-1">
+    <!-- Michelin Star -->
+    <section>
+        <div class="michelin-star">
+            <img src="images/michelin-star.png" width="500">
+        </div>
     </section>
 
     <!-- About Section -->
-    <div class="flex-container">
-        <img src="images/men-in-kitchen.jpg" width="977" height="677">
-        <div class="about-card">
-            <div class="card-text">
-                <h1 class="card-title">About Kasama</h1>
-                <p class="card-desc">Originally located in Newark, New Jersey, Kasama has grown to be the cities most
-                    loved Filipino kitchen. You'll find the most traditional dishes and foods you have never even seen
-                    before. At Kasama, we are dedicated to continue to provide Michelin star service to all customers.
-                    All are welcome through Kasama's doors.
-                </p>
+    <section class="container">
+        <div class="flex-container">
+            <img src="images/men-in-kitchen.jpg" width="800" height="677">
+            <div class="about-card">
+                <div class="card-text">
+                    <h1 class="card-title">About Kasama</h1>
+                    <p class="card-desc">Originally located in Newark, New Jersey, Kasama has grown to be the cities
+                        most
+                        loved Filipino kitchen. You'll find the most traditional dishes and foods you have never even
+                        seen
+                        before. At Kasama, we are dedicated to continue to provide Michelin star service to all
+                        customers.
+                        All are welcome through Kasama's doors.
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Hours of Operation -->
     <section>
@@ -96,12 +114,10 @@
     </section>
 
     <!-- Stay Connected -->
-    <section>
+    <section class="container">
         <div class="flex-container">
+            <img src="images/stay-connected-image.jpg" width="800" height="677">
             <div class="sc-card">
-                <div class="col-6">
-                    <img src="images/stay-connected-image.jpg" width="1073" height="788">
-                </div>
                 <div class="col-6">
                     <h3 class="sc-header">Stay Connected</h3>
                     <p class="sc-desc">Sign up for our biweekly emails of new dishes and the chef's specialty.</p>
@@ -116,58 +132,62 @@
     <section class="pad-2"></section>
 
     <!-- Gallery -->
-    <section>
+    <section class="container">
         <div class="gallery">
             <div class="gallery-header">Gallery</div>
             <img src="images/gallery-1.jpg" width="1800" min-height="656">
             <section class="pad-1">
                 <p class="gallery-text">A menu</p>
             </section>
-            <img src="images/gallery-1.jpg" width="1800" min-height="656">
+            <img src="images/gallery-2.jpg" width="1800" min-height="656">
             <section class="pad-1">
                 <p class="gallery-text">For every season.</p>
             </section>
-            <img src="images/gallery-1.jpg" width="1800" min-height="656">
+            <img src="images/gallery-3.jpg" width="1800" min-height="656">
         </div>
     </section>
 
     <!-- Empty Containers -->
-    <section class="pad-2"></section>
+    <section class="pad-1"></section>
     <div class="dividers"></div>
-    <section class="pad-2"></section>
+    <section class="pad-1"></section>
 
     <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <!-- Section 1: Hours of Operation & Locations -->
-            <div class="footer-section">
-                <p><strong>Hours of Operation</strong></p>
-                <p class="">Tuesday - Saturday 5:30 PM - 8:30 PM</p>
-                <p>Tempe | Downtown Phoenix | Scottsdale</p>
-            </div>
-            <!-- Section 2: Kasama Logo -->
-            <div class="footer-section">
-                <div class="logo-container">
-                    <img src="images/logo-o-white.png" width="200">
+    <section class="container">
+        <footer>
+            <div class="footer-container container section">
+                <!-- Section 1: Hours of Operation & Locations -->
+                <div class="footer-section">
+                    <p><strong>Hours of Operation</strong></p>
+                    <p>Tuesday - Saturday 5:30 PM - 8:30 PM</p>
+                    <a href="Locations">Tempe | Downtown Phoenix | Scottsdale</a>
                 </div>
-            </div>
+                <!-- Section 2: Kasama Logo -->
+                <div class="footer-section">
+                    <div class="logo-container">
+                        <img src="images/logo-o-white.png" width="200">
+                    </div>
+                </div>
 
-            <!-- Section 3: Contact Us -->
-            <div class="footer-section">
-                <div>
-                    <p><strong>Contact Us</strong></p>
-                </div>
-                <div>
-                    <p>(602)-829-0189</p>
-                </div>
-                <div>
-                    <p>Promotions</p>
-                </div>
-                <div>
-                    <p>Unsubscribe</p>
+                <!-- Section 3: Contact Us -->
+                <div class="footer-section">
+                    <div>
+                        <p><strong>Contact Us</strong></p>
+                    </div>
+                    <div>
+                        <p>(602)-829-0189</p>
+                    </div>
+                    <div>
+                        <a href="Promotions">Promotions</a>
+                    </div>
+                    <div>
+                        <a href="Unsubscribe">Unsubscribe</a>
+                    </div>
                 </div>
             </div>
-    </footer>
+        </footer>
+    </section>
+
 </body>
 
 </html>
